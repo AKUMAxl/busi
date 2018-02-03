@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">module_work</string>
+
+    <string name="khgl">客户管理</string>
+    <string name="wxbydd">维修保养订单</string>
+    <string name="xsfx">销售分析</string>
+    <string name="xcdd">洗车订单</string>
+    <string name="cw">财务</string>
+    <string name="ckpl">查看评论</string>
+    <string name="xx">信息</string>
+    <string name="byjyydd">保养券预约订单</string>
+    <string name="kjxfjl">卡券消费记录</string>
+    <string name="kcjygl">库存机油管理</string>
+    <string name="lphdjl">礼品核对记录</string>
+    <string name="fuwudingdan">服务订单</string>
+    <string name="yingyezhong">营业中</string>
+    <string name="xiuxizhong">休息中</string>
+    <string name="dsspdd">待送商品订单</string>
+    <string name="ysspdd">已送商品订单</string>
+    <string name="qingshaodeng">请稍等</string>
+    <string name="ztxgsb">状态修改失败</string>
+    <string name="ztxgcg">状态修改成功</string>
+
+</resources>

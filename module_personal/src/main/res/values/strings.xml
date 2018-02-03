@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">module_personal</string>
+    <string name="jibenxinxi">基本信息</string>
+    <string name="wodeyinhangka">我的银行卡</string>
+    <string name="xiugaimima">修改密码</string>
+    <string name="guanyuwomen">关于我们</string>
+    <string name="yijianfankui">意见反馈</string>
+    <string name="banbengengxin">版本更新</string>
+    <string name="tuichu">退出</string>
+    <string name="tuichudenglu">退出登录</string>
+    <string name="shangjiaid">商家ID</string>
+    <string name="gongsimingcheng">公司名称</string>
+    <string name="bitian">*</string>
+    <string name="changsuomingcheng">场所名称</string>
+    <string name="suozaidiqu">所在地区</string>
+    <string name="xiangxidizhi">详细地址</string>
+    <string name="shangjiajianjie">商家简介</string>
+    <string name="jingyingxiangmu">经营项目</string>
+    <string name="fuwufanwei">服务范围</string>
+    <string name="yingyeshijian">营业时间</string>
+    <string name="lianxiren">联系人</string>
+    <string name="kefudianhua">客服电话</string>
+    <string name="baocun">保存</string>
+    <string name="zuiduoketianjiazhangzhaopian">最多可添加9张照片（点击照片可删除）</string>
+    <string name="queding">确定</string>
+    <string name="qingshuruwenzimiaoshu">请输入文字描述</string>
+    <string name="qingshurukefudianhua">请输入客服电话</string>
+</resources>

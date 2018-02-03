@@ -1,0 +1,60 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    
+    repositories {
+        jcenter()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.0'
+        //classpath 'com.android.tools.build:gradle:2.3.3'
+        //classpath "com.neenbedankt.gradle.plugins:android-apt:1.8"
+        //classpath 'com.jakewharton:butterknife-gradle-plugin:5.1.1'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        google()
+        maven { url "https://jitpack.io" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext{
+    buildToolsVersion = '26.0.2'
+    compileSdkVersion = 27
+    minSdkVersion = 15
+    targetSdkVersion = 27
+    versionCode = 25
+    versionName = "2.8.2"
+    javaVersion = JavaVersion.VERSION_1_8
+
+    // App dependencies version
+    supportLibraryVersion = "25.3.1"
+    retrofitVersion = "2.1.0"
+    glideVersion = "3.7.0"
+    loggerVersion = "2.1.1"
+    eventbusVersion = "3.0.0"
+    gsonVersion = "2.2.4"
+    photoViewVersion = "2.0.0"
+    okhttpVersion = "3.9.0"
+    retrofitVersion = "2.3.0"
+    rxjavaVersion = "2.0.1"
+
+    //检查时间：2017.6.6
+    annotationProcessor = "1.0.3"
+    routerVersion = "1.2.1.1"
+    easyRecyclerVersion = "4.4.0"
+    cookieVersion = "v1.0.1"
+    toastyVersion = "1.1.3"
+
+
+}

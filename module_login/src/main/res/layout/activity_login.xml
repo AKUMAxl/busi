@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_bg">
+
+
+    <com.yangchedou.lib_common.Weight.ClearnEditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size_45"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/size_50"
+        android:layout_marginRight="@dimen/size_50"
+        app:headPic="@drawable/ic_perm_identity_black_36dp"
+        app:type="user"
+        />
+
+    <com.yangchedou.lib_common.Weight.ClearnEditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45"
+        android:layout_below="@+id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/size_10"
+        android:layout_marginLeft="@dimen/size_50"
+        android:layout_marginRight="@dimen/size_50"
+        app:headPic="@drawable/ic_lock_black_36dp"
+        app:type="password"
+        />
+
+    <TextView
+        android:id="@+id/tv_login"
+        style="@style/button_style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_40"
+        android:text="@string/denglu"
+        android:textColor="@color/white"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/size_20"
+        android:layout_marginLeft="@dimen/size_50"
+        android:layout_marginRight="@dimen/size_50"
+       />
+
+
+
+</RelativeLayout>

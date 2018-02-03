@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/busi.iml" filepath="$PROJECT_DIR$/busi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_common/lib_common.iml" filepath="$PROJECT_DIR$/lib_common/lib_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module_login/module_login.iml" filepath="$PROJECT_DIR$/module_login/module_login.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module_main/module_main.iml" filepath="$PROJECT_DIR$/module_main/module_main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module_money/module_money.iml" filepath="$PROJECT_DIR$/module_money/module_money.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module_order/module_order.iml" filepath="$PROJECT_DIR$/module_order/module_order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module_personal/module_personal.iml" filepath="$PROJECT_DIR$/module_personal/module_personal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module_work/module_work.iml" filepath="$PROJECT_DIR$/module_work/module_work.iml" />
+    </modules>
+  </component>
+</project>

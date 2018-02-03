@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Module_main</string>
+    <string name="shoukuan">收款</string>
+    <string name="shezhi">设置</string>
+    <string name="dqyxbbqsj">当前有新版本,请升级!</string>
+    <string name="sj">升级</string>
+    <string name="qx">取消</string>
+</resources>

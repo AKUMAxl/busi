@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home_tab1"
+        android:icon="@mipmap/footer1_hl"
+        android:title="@string/gongzuotai" />
+
+    <item
+        android:id="@+id/navigation_home_tab2"
+        android:icon="@mipmap/footer3_hl"
+        android:title="@string/shoukuan" />
+
+    <item
+        android:id="@+id/navigation_home_tab3"
+        android:icon="@mipmap/footer4_hl"
+        android:title="@string/shezhi" />
+
+</menu>

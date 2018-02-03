@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yangchedou.module_order">
+
+    <application android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".MaintianOrder.OrderManagerActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MaintianOrderDetial.MaintianOrderDetialActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+    </application>
+</manifest>

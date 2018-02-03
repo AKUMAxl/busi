@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/baseinfo_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:layout_editor_absoluteY="25dp">
+
+    <com.yangchedou.lib_common.Weight.XlTitle
+        android:id="@+id/baseinfo_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50"
+        app:layout_constraintBottom_toTopOf="@id/baseinfo_image"
+        app:layout_constraintLeft_toLeftOf="@id/baseinfo_parent"
+        app:layout_constraintRight_toRightOf="@id/baseinfo_parent"
+        app:layout_constraintTop_toTopOf="@id/baseinfo_parent">
+
+    </com.yangchedou.lib_common.Weight.XlTitle>
+
+    <ImageView
+        android:id="@+id/baseinfo_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_120"
+        android:background="@mipmap/temp4"
+        app:layout_constraintLeft_toLeftOf="@id/baseinfo_parent"
+        app:layout_constraintRight_toRightOf="@id/baseinfo_parent"
+        app:layout_constraintTop_toBottomOf="@id/baseinfo_title" />
+
+    <TextView
+        android:id="@+id/baseinfo_tv_sjid"
+        android:layout_width="@dimen/size_80"
+        android:layout_height="@dimen/size_30"
+        android:gravity="center_vertical|right"
+        android:text="@string/shangjiaid"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_14"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/baseinfo_tv_content_sjid"
+        app:layout_constraintTop_toBottomOf="@id/baseinfo_image" />
+
+    <TextView
+        android:id="@+id/baseinfo_tv_content_sjid"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/size_30"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="@dimen/size_10"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_14"
+        app:layout_constraintLeft_toRightOf="@id/baseinfo_tv_sjid"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/baseinfo_image" />
+
+    <View
+        android:id="@+id/baseinfo_v1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_10"
+        android:background="@color/colorGrey"
+        app:layout_constraintLeft_toLeftOf="@id/baseinfo_tv_sjid"
+        app:layout_constraintRight_toRightOf="@id/baseinfo_tv_content_sjid"
+        app:layout_constraintTop_toBottomOf="@id/baseinfo_tv_sjid" />
+
+    <TextView
+        android:id="@+id/baseinfo_tv_gsmc"
+        android:layout_width="@dimen/size_90"
+        android:layout_height="@dimen/size_30"
+        android:gravity="center_vertical|right"
+        android:text="@string/gongsimingcheng"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_14"
+        app:layout_constraintLeft_toLeftOf="@id/baseinfo_parent"
+        app:layout_constraintRight_toLeftOf="@id/baseinfo_tv_b1"
+        app:layout_constraintTop_toBottomOf="@id/baseinfo_v1" />
+
+    <TextView
+        android:id="@+id/baseinfo_tv_b1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size_30"
+        android:gravity="center"
+        android:text="@string/bitian"
+        android:textColor="@color/colorRed"
+        app:layout_constraintBottom_toBottomOf="@id/baseinfo_tv_gsmc"
+        app:layout_constraintLeft_toRightOf="@id/baseinfo_tv_gsmc"
+        app:layout_constraintRight_toLeftOf="@id/baseinfo_et_content_gsmc"
+        app:layout_constraintTop_toTopOf="@id/baseinfo_tv_gsmc" />
+
+    <EditText
+        android:id="@+id/baseinfo_et_content_gsmc"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/size_30"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="@dimen/size_10"
+        android:text="222"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_14"
+        app:layout_constraintBottom_toBottomOf="@id/baseinfo_tv_gsmc"
+        app:layout_constraintLeft_toRightOf="@id/baseinfo_tv_b1"
+        app:layout_constraintRight_toRightOf="@id/baseinfo_parent"
+        app:layout_constraintTop_toTopOf="@id/baseinfo_tv_gsmc" />
+
+    <View
+        android:id="@+id/baseinfo_v2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1"
+        android:background="@color/colorGrey"
+        app:layout_constraintLeft_toLeftOf="@id/baseinfo_parent"
+        app:layout_constraintRight_toRightOf="@id/baseinfo_parent"
+        app:layout_constraintTop_toBottomOf="@id/baseinfo_tv_gsmc" />
+
+
+    <TextView
+        android:id="@+id/baseinfo_tv_csmc"
+        android:layout_width="@dimen/size_90"
+        android:layout_height="@dimen/size_30"
+        android:gravity="center_vertical|right"
+        android:text="@string/changsuomingcheng"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_14"
+        app:layout_constraintLeft_toLeftOf="@id/baseinfo_parent"
+        app:layout_constraintRight_toLeftOf="@id/baseinfo_tv_b2"
+        app:layout_constraintTop_toBottomOf="@id/baseinfo_v2" />
+
+    <TextView
+        android:id="@+id/baseinfo_tv_b2"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size_30"
+        android:gravity="center"
+        android:text="@string/bitian"
+        android:textColor="@color/colorRed"
+        app:layout_constraintBottom_toBottomOf="@id/baseinfo_tv_csmc"
+        app:layout_constraintLeft_toRightOf="@id/baseinfo_tv_csmc"
+        app:layout_constraintRight_toLeftOf="@id/baseinfo_et_content_csmc"
+        app:layout_constraintTop_toTopOf="@id/baseinfo_tv_csmc" />
+
+    <EditText
+        android:id="@+id/baseinfo_et_content_csmc"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/size_30"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="@dimen/size_10"
+        android:text="222"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_14"
+        app:layout_constraintBottom_toBottomOf="@id/baseinfo_tv_csmc"
+        app:layout_constraintLeft_toRightOf="@id/baseinfo_tv_b2"
+        app:layout_constraintRight_toRightOf="@id/baseinfo_parent"
+        app:layout_constraintTop_toTopOf="@id/baseinfo_tv_csmc" />
+
+    <View
+        android:id="@+id/baseinfo_v3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1"
+        android:background="@color/colorGrey"
+        app:layout_constraintLeft_toLeftOf="@id/baseinfo_parent"
+        app:layout_constraintRight_toRightOf="@id/baseinfo_parent"
+        app:layout_constraintTop_toBottomOf="@id/baseinfo_et_content_csmc" />
+
+    <TextView
+        android:id="@+id/baseinfo_tv_szdq"
+        android:layout_width="@dimen/size_90"
+        android:layout_height="@dimen/size_30"
+        android:gravity="center_vertical|right"
+        android:text="@string/suozaidiqu"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_14"
+        app:layout_constraintLeft_toLeftOf="@id/baseinfo_parent"
+        app:layout_constraintRight_toLeftOf="@id/baseinfo_tv_b2"
+        app:layout_constraintTop_toBottomOf="@id/baseinfo_v3" />
+
+    <TextView
+        android:id="@+id/baseinfo_tv_b3"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size_30"
+        android:gravity="center"
+        android:text="@string/bitian"
+        android:textColor="@color/colorRed"
+        app:layout_constraintBottom_toBottomOf="@id/baseinfo_tv_szdq"
+        app:layout_constraintLeft_toRightOf="@id/baseinfo_tv_szdq"
+        app:layout_constraintRight_toLeftOf="@id/baseinfo_et_content_csmc"
+        app:layout_constraintTop_toTopOf="@id/baseinfo_tv_szdq" />
+
+    <TextView
+        android:id="@+id/baseinfo_tv_content_szdq"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/size_30"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="@dimen/size_10"
+        android:text="222"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_14"
+        app:layout_constraintBottom_toBottomOf="@id/baseinfo_tv_szdq"
+        app:layout_constraintLeft_toRightOf="@id/baseinfo_tv_b3"
+        app:layout_constraintRight_toLeftOf="@id/baseinfo_iv_toright_szdq"
+        app:layout_constraintTop_toTopOf="@id/baseinfo_tv_szdq" />
+
+    <ImageView
+        android:id="@+id/baseinfo_iv_toright_szdq"
+        android:layout_width="@dimen/size_15"
+        android:layout_height="@dimen/size_15"
+        android:background="@mipmap/arrow_right"
+        android:layout_margin="@dimen/size_5"
+        app:layout_constraintRight_toRightOf="@id/baseinfo_parent"
+        app:layout_constraintTop_toTopOf="@id/baseinfo_tv_content_szdq"
+        app:layout_constraintBottom_toBottomOf="@id/baseinfo_tv_content_szdq"/>
+
+    <View
+        android:id="@+id/baseinfo_v4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1"
+        android:background="@color/colorGrey"
+        app:layout_constraintLeft_toLeftOf="@id/baseinfo_parent"
+        app:layout_constraintRight_toRightOf="@id/baseinfo_parent"
+        app:layout_constraintTop_toBottomOf="@id/baseinfo_tv_szdq" />
+
+    <TextView
+        android:id="@+id/baseinfo_tv_xxdz"
+        android:layout_width="@dimen/size_90"
+        android:layout_height="@dimen/size_30"
+        android:gravity="center_vertical|right"
+        android:text="@string/xiangxidizhi"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_14"
+        app:layout_constraintLeft_toLeftOf="@id/baseinfo_parent"
+        app:layout_constraintRight_toLeftOf="@id/baseinfo_tv_b2"
+        app:layout_constraintTop_toBottomOf="@id/baseinfo_v4" />
+
+    <TextView
+        android:id="@+id/baseinfo_tv_b4"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size_30"
+        android:gravity="center"
+        android:text="@string/bitian"
+        android:textColor="@color/colorRed"
+        app:layout_constraintBottom_toBottomOf="@id/baseinfo_tv_xxdz"
+        app:layout_constraintLeft_toRightOf="@id/baseinfo_tv_xxdz"
+        app:layout_constraintRight_toLeftOf="@id/baseinfo_et_content_xxdz"
+        app:layout_constraintTop_toTopOf="@id/baseinfo_tv_xxdz" />
+
+    <EditText
+        android:id="@+id/baseinfo_et_content_xxdz"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/size_50"
+        android:background="@color/colorWhite"
+        android:gravity="left"
+        android:paddingLeft="@dimen/size_10"
+        android:text="222"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_14"
+        android:paddingTop="@dimen/size_5"
+        app:layout_constraintTop_toTopOf="@id/baseinfo_tv_xxdz"
+        app:layout_constraintLeft_toRightOf="@id/baseinfo_tv_b4"
+        app:layout_constraintRight_toRightOf="@id/baseinfo_parent"
+         />
+
+    <View
+        android:id="@+id/baseinfo_v5"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorGrey"
+        app:layout_constraintTop_toBottomOf="@id/baseinfo_et_content_xxdz"
+        app:layout_constraintLeft_toLeftOf="@id/baseinfo_parent"
+        app:layout_constraintRight_toRightOf="@id/baseinfo_parent"
+        />
+
+
+    <TextView
+        android:id="@+id/baseinfo_tv_sjjj"
+        android:layout_width="@dimen/size_100"
+        android:layout_height="@dimen/size_30"
+        android:gravity="center_vertical|right"
+        android:text="@string/shangjiajianjie"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_14"
+        app:layout_constraintLeft_toLeftOf="@id/baseinfo_parent"
+        app:layout_constraintRight_toLeftOf="@id/baseinfo_tv_content_sjjj"
+        app:layout_constraintTop_toBottomOf="@id/baseinfo_v5" />
+
+    <TextView
+        android:id="@+id/baseinfo_tv_content_sjjj"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/size_30"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="@dimen/size_10"
+        android:text="222"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_14"
+        app:layout_constraintBottom_toBottomOf="@id/baseinfo_tv_sjjj"
+        app:layout_constraintLeft_toRightOf="@id/baseinfo_tv_sjjj"
+        app:layout_constraintRight_toLeftOf="@id/baseinfo_iv_toright_sjjj"
+        app:layout_constraintTop_toTopOf="@id/baseinfo_tv_sjjj" />
+
+    <ImageView
+        android:id="@+id/baseinfo_iv_toright_sjjj"
+        android:layout_width="@dimen/size_15"
+        android:layout_height="@dimen/size_15"
+        android:background="@mipmap/arrow_right"
+        android:layout_margin="@dimen/size_5"
+        app:layout_constraintTop_toTopOf="@id/baseinfo_tv_content_sjjj"
+        app:layout_constraintBottom_toBottomOf="@id/baseinfo_tv_content_sjjj"
+        app:layout_constraintRight_toRightOf="@id/baseinfo_parent"
+         />
+
+    <View
+        android:id="@+id/baseinfo_v6"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1"
+        android:background="@color/colorGrey"
+        app:layout_constraintTop_toBottomOf="@id/baseinfo_tv_sjjj"
+        app:layout_constraintLeft_toLeftOf="@id/baseinfo_parent"
+        app:layout_constraintRight_toRightOf="@id/baseinfo_parent"
+        />
+
+    <TextView
+        android:id="@+id/baseinfo_tv_jyxm"
+        android:layout_width="@dimen/size_100"
+        android:layout_height="@dimen/size_30"
+        android:gravity="center_vertical|right"
+        android:text="@string/jingyingxiangmu"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_14"
+        app:layout_constraintLeft_toLeftOf="@id/baseinfo_parent"
+        app:layout_constraintRight_toLeftOf="@id/baseinfo_tv_content_jyxm"
+        app:layout_constraintTop_toBottomOf="@id/baseinfo_v6" />
+
+    <TextView
+        android:id="@+id/baseinfo_tv_content_jyxm"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/size_30"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="@dimen/size_10"
+        android:text="222"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_14"
+        android:lines="1"
+        app:layout_constraintBottom_toBottomOf="@id/baseinfo_tv_jyxm"
+        app:layout_constraintLeft_toRightOf="@id/baseinfo_tv_jyxm"
+        app:layout_constraintRight_toLeftOf="@id/baseinfo_iv_toright_jyxm"
+        app:layout_constraintTop_toTopOf="@id/baseinfo_tv_jyxm" />
+
+    <ImageView
+        android:id="@+id/baseinfo_iv_toright_jyxm"
+        android:layout_width="@dimen/size_15"
+        android:layout_height="@dimen/size_15"
+        android:background="@mipmap/arrow_right"
+        android:layout_margin="@dimen/size_5"
+        app:layout_constraintTop_toTopOf="@id/baseinfo_tv_content_jyxm"
+        app:layout_constraintBottom_toBottomOf="@id/baseinfo_tv_content_jyxm"
+        app:layout_constraintRight_toRightOf="@id/baseinfo_parent"
+        />
+
+    <View
+        android:id="@+id/baseinfo_v7"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1"
+        android:background="@color/colorGrey"
+        app:layout_constraintTop_toBottomOf="@id/baseinfo_tv_jyxm"
+        app:layout_constraintLeft_toLeftOf="@id/baseinfo_parent"
+        app:layout_constraintRight_toRightOf="@id/baseinfo_parent"
+        />
+
+    <TextView
+        android:id="@+id/baseinfo_tv_fwfw"
+        android:layout_width="@dimen/size_100"
+        android:layout_height="@dimen/size_30"
+        android:gravity="center_vertical|right"
+        android:text="@string/fuwufanwei"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_14"
+        app:layout_constraintLeft_toLeftOf="@id/baseinfo_parent"
+        app:layout_constraintRight_toLeftOf="@id/baseinfo_tv_content_fwfw"
+        app:layout_constraintTop_toBottomOf="@id/baseinfo_v7" />
+
+    <TextView
+        android:id="@+id/baseinfo_tv_content_fwfw"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/size_30"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="@dimen/size_10"
+        android:text="222"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_14"
+        android:lines="1"
+        app:layout_constraintBottom_toBottomOf="@id/baseinfo_tv_fwfw"
+        app:layout_constraintLeft_toRightOf="@id/baseinfo_tv_fwfw"
+        app:layout_constraintRight_toLeftOf="@id/baseinfo_iv_toright_fwfw"
+        app:layout_constraintTop_toTopOf="@id/baseinfo_tv_fwfw" />
+
+    <ImageView
+        android:id="@+id/baseinfo_iv_toright_fwfw"
+        android:layout_width="@dimen/size_15"
+        android:layout_height="@dimen/size_15"
+        android:background="@mipmap/arrow_right"
+        android:layout_margin="@dimen/size_5"
+        app:layout_constraintTop_toTopOf="@id/baseinfo_tv_content_fwfw"
+        app:layout_constraintBottom_toBottomOf="@id/baseinfo_tv_content_fwfw"
+        app:layout_constraintRight_toRightOf="@id/baseinfo_parent"
+        />
+
+    <View
+        android:id="@+id/baseinfo_v8"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1"
+        android:background="@color/colorGrey"
+        app:layout_constraintTop_toBottomOf="@id/baseinfo_tv_fwfw"
+        app:layout_constraintLeft_toLeftOf="@id/baseinfo_parent"
+        app:layout_constraintRight_toRightOf="@id/baseinfo_parent"
+        />
+
+
+    <TextView
+        android:id="@+id/baseinfo_tv_yysj"
+        android:layout_width="@dimen/size_100"
+        android:layout_height="@dimen/size_30"
+        android:gravity="center_vertical|right"
+        android:text="@string/yingyeshijian"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_14"
+        app:layout_constraintLeft_toLeftOf="@id/baseinfo_parent"
+        app:layout_constraintRight_toLeftOf="@id/baseinfo_tv_content_yysj"
+        app:layout_constraintTop_toBottomOf="@id/baseinfo_v8" />
+
+    <TextView
+        android:id="@+id/baseinfo_tv_content_yysj"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/size_30"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="@dimen/size_10"
+        android:text="222"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_14"
+        app:layout_constraintBottom_toBottomOf="@id/baseinfo_tv_yysj"
+        app:layout_constraintLeft_toRightOf="@id/baseinfo_tv_yysj"
+        app:layout_constraintRight_toLeftOf="@id/baseinfo_iv_toright_yysj"
+        app:layout_constraintTop_toTopOf="@id/baseinfo_tv_yysj" />
+
+    <ImageView
+        android:id="@+id/baseinfo_iv_toright_yysj"
+        android:layout_width="@dimen/size_15"
+        android:layout_height="@dimen/size_15"
+        android:background="@mipmap/arrow_right"
+        android:layout_margin="@dimen/size_5"
+        app:layout_constraintTop_toTopOf="@id/baseinfo_tv_content_yysj"
+        app:layout_constraintBottom_toBottomOf="@id/baseinfo_tv_content_yysj"
+        app:layout_constraintRight_toRightOf="@id/baseinfo_parent"
+        />
+
+    <View
+        android:id="@+id/baseinfo_v9"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorGrey"
+        app:layout_constraintTop_toBottomOf="@id/baseinfo_tv_yysj"
+        app:layout_constraintLeft_toLeftOf="@id/baseinfo_parent"
+        app:layout_constraintRight_toRightOf="@id/baseinfo_parent"
+        />
+
+    <TextView
+        android:id="@+id/baseinfo_tv_lxr"
+        android:layout_width="@dimen/size_100"
+        android:layout_height="@dimen/size_30"
+        android:gravity="center_vertical|right"
+        android:text="@string/lianxiren"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_14"
+        app:layout_constraintLeft_toLeftOf="@id/baseinfo_image"
+        app:layout_constraintRight_toLeftOf="@id/baseinfo_et_content_lxr"
+        app:layout_constraintTop_toBottomOf="@id/baseinfo_v9" />
+
+    <EditText
+        android:id="@+id/baseinfo_et_content_lxr"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/size_30"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="@dimen/size_10"
+        android:text="111"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_14"
+        app:layout_constraintTop_toTopOf="@id/baseinfo_tv_lxr"
+        app:layout_constraintBottom_toBottomOf="@id/baseinfo_tv_lxr"
+        app:layout_constraintLeft_toRightOf="@id/baseinfo_tv_lxr"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <View
+        android:id="@+id/baseinfo_v10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1"
+        android:background="@color/colorGrey"
+        app:layout_constraintLeft_toLeftOf="@id/baseinfo_parent"
+        app:layout_constraintRight_toRightOf="@id/baseinfo_parent"
+        app:layout_constraintTop_toBottomOf="@id/baseinfo_tv_lxr" />
+
+    <TextView
+        android:id="@+id/baseinfo_tv_kfdh"
+        android:layout_width="@dimen/size_100"
+        android:layout_height="@dimen/size_30"
+        android:gravity="center_vertical|right"
+        android:text="@string/kefudianhua"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_14"
+        app:layout_constraintLeft_toLeftOf="@id/baseinfo_parent"
+        app:layout_constraintRight_toLeftOf="@id/baseinfo_et_content_kfdh"
+        app:layout_constraintTop_toBottomOf="@id/baseinfo_v10" />
+
+    <EditText
+        android:id="@+id/baseinfo_et_content_kfdh"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/size_30"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="@dimen/size_10"
+        android:hint="@string/qingshurukefudianhua"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_14"
+        app:layout_constraintTop_toTopOf="@id/baseinfo_tv_kfdh"
+        app:layout_constraintBottom_toBottomOf="@id/baseinfo_tv_kfdh"
+        app:layout_constraintLeft_toRightOf="@id/baseinfo_tv_kfdh"
+        app:layout_constraintRight_toRightOf="@id/baseinfo_parent"
+        />
+
+    <View
+        android:id="@+id/baseinfo_v11"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1"
+        android:background="@color/colorGrey"
+        app:layout_constraintLeft_toLeftOf="@id/baseinfo_parent"
+        app:layout_constraintRight_toRightOf="@id/baseinfo_parent"
+        app:layout_constraintTop_toBottomOf="@id/baseinfo_tv_kfdh" />
+
+</android.support.constraint.ConstraintLayout>

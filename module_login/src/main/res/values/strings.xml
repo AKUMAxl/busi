@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">module_login</string>
+    <string name="denglu">登录</string>
+    <string name="dengluzhong">登录中</string>
+    <string name="yonghumingbunengweikong">用户名不能为空</string>
+    <string name="mimabunengweikong">密码不能为空</string>
+    <string name="jiazaizhong">加载中</string>
+
+</resources>

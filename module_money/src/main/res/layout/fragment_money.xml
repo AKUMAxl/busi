@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.yangchedou.lib_common.Weight.XlTitle
+        android:id="@+id/money_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+    </com.yangchedou.lib_common.Weight.XlTitle>
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_70"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@+id/money_title">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/fukuan_logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/bottom_icon"
+            android:textSize="@dimen/text_18"
+            android:text="@string/lnycdkjyxgs"/>
+
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:layout_above="@+id/bottom"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:gravity="center">
+        
+        <ImageView
+            android:id="@+id/pic"
+            android:layout_width="@dimen/size_200"
+            android:layout_height="@dimen/size_200"
+            android:src="@mipmap/fukuan_logo"/>
+        
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_100"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bottom_icon"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/duigongzhanghaozhifu"
+            android:textSize="@dimen/text_18"
+            android:textColor="@color/colorWhite"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kaihuyinhang"
+            android:textSize="@dimen/text_14"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="@dimen/size_10"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yinhangzhanghao"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_14"
+            android:layout_marginTop="@dimen/size_5"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

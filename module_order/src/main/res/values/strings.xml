@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">module_order</string>
+    <string name="dingdanguanli">订单管理</string>
+    <string name="daiqueren">待确认</string>
+    <string name="daifuwu">待服务</string>
+    <string name="yiwancheng">待完成</string>
+    <string name="yiguanbi">已关闭</string>
+    <string name="shibai">失败</string>
+    <string name="shuliang">数量:</string>
+    <string name="zongjia">总价:</string>
+    <string name="dingdanbianhao">订单编号:</string>
+    <string name="fuwuneirong">服务内容:</string>
+    <string name="dingdanjie">订单金额:</string>
+    <string name="sjzfje">实际支付金额:</string>
+    <string name="nicheng">昵称</string>
+    <string name="dingdanjine">订单金额</string>
+    <string name="fuwuxiangmu">服务项目</string>
+    <string name="chexing">车型</string>
+    <string name="kehudianhua">客户电话</string>
+    <string name="xiadanshijian">下单时间</string>
+    <string name="dingdanhianhao">订单编号</string>
+    <string name="xiangmu">项目</string>
+    <string name="jiage">价格</string>
+    <string name="quxiaodingdanyuanyin">取消订单原因:</string>
+    <string name="qingtianxiequxiaodingdandeyuanyin">请填写取消订单的原因</string>
+    <string name="jieshoudingdan">接受订单</string>
+    <string name="quxiaodingdan">取消订单</string>
+    <string name="shuliang1">数量</string>
+</resources>

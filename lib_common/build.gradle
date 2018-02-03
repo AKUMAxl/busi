@@ -1,0 +1,95 @@
+apply plugin: 'com.android.library'
+//apply plugin: 'com.jakewharton.butterknife'
+//apply plugin: 'com.neenbedankt.android-apt'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+    }
+    buildToolsVersion '26.0.2'
+
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:support-v4:27.0.0'
+    compile 'com.android.support:appcompat-v7:27.0.0'
+    compile 'com.android.support:recyclerview-v7:27.0.0'
+    compile 'com.android.support:design:27.0.0'
+
+    //compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha2'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    //test
+
+    //router
+    compile "com.alibaba:arouter-api:$rootProject.routerVersion"
+
+    //logger
+    compile "com.orhanobut:logger:$rootProject.loggerVersion"
+
+    //okhttp
+    compile "com.squareup.okhttp3:okhttp:$rootProject.okhttpVersion"
+
+    //retrofit
+    compile "com.squareup.retrofit2:retrofit:$rootProject.retrofitVersion"
+    //compile "com.squareup.retrofit2:converter-gson:$rootProject.retrofitVersion"
+    //compile "com.squareup.retrofit2:adapter-rxjava:$rootProject.retrofitVersion"
+    compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+    compile 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    //Rx
+    compile "io.reactivex.rxjava2:rxjava:$rootProject.rxjavaVersion"
+    compile "io.reactivex.rxjava2:rxandroid:$rootProject.rxjavaVersion"
+    //api 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    //api 'io.reactivex.rxjava2:rxjava:2.0.1'
+
+    //dagger2
+    annotationProcessor "com.google.dagger:dagger-compiler:2.4"
+    compile "com.google.dagger:dagger:2.4"
+    compile "org.glassfish:javax.annotation:10.0-b28"
+    /*apt 'com.google.dagger:dagger-compiler:2.2'
+    provided 'org.glassfish:javax.annotation:10.0-b28'
+    compile 'com.google.dagger:dagger:2.2'*/
+
+    //glide
+    compile "com.github.bumptech.glide:glide:$rootProject.glideVersion"
+
+    //zxing
+    compile "com.google.code.gson:gson:$rootProject.gsonVersion"
+
+    //TakePhoto
+    compile 'com.jph.takephoto:takephoto_library:4.0.3'
+
+    //Permission control
+    compile 'com.yanzhenjie:permission:1.0.5'
+
+    //选择器
+    compile('cn.qqtheme.framework:WheelPicker:1.5.5') {
+        exclude group: 'com.android.support'
+    }
+    compile('cn.qqtheme.framework:FilePicker:1.5.5') {
+        exclude group: 'com.android.support'
+    }
+    compile('cn.qqtheme.framework:ColorPicker:1.5.5') {
+        exclude group: 'com.android.support'
+    }
+
+    //刷新加载
+    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.3'
+    compile 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.3'
+
+    //图表
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+
+    //内存检测
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+
+}

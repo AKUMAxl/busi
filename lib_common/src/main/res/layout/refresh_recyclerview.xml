@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_40"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:text="@string/zhengzaishuaxin"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_12"
+        android:visibility="gone"
+        android:layout_alignParentTop="true"/>
+
+
+    <TextView
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_40"
+        android:text="@string/zhengzaijiazai"
+        android:textSize="@dimen/text_12"
+        android:textColor="@color/colorBlack"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"/>
+
+    <com.yangchedou.lib_common.XLRecyclerView.RefreshRecyclerView
+        android:id="@+id/rrv"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/header"
+        android:layout_above="@id/footer"
+
+        >
+
+    </com.yangchedou.lib_common.XLRecyclerView.RefreshRecyclerView>
+
+
+
+
+
+
+</RelativeLayout>

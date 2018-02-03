@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/businessbrief_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <com.yangchedou.lib_common.Weight.XlTitle
+        android:id="@+id/businessbrief_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50"
+        app:layout_constraintTop_toTopOf="@id/businessbrief_parent"
+        app:layout_constraintLeft_toLeftOf="@id/businessbrief_parent"
+        app:layout_constraintRight_toRightOf="@id/businessbrief_parent">
+
+    </com.yangchedou.lib_common.Weight.XlTitle>
+
+    <EditText
+        android:id="@+id/businessbrief_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_120"
+        android:layout_margin="@dimen/size_10"
+        android:background="@mipmap/et_bg"
+        android:hint="@string/qingshuruwenzimiaoshu"
+        android:padding="@dimen/size_10"
+        android:textSize="@dimen/text_14"
+        android:gravity="start"
+        app:layout_constraintTop_toBottomOf="@id/businessbrief_title"
+        app:layout_constraintLeft_toLeftOf="@id/businessbrief_parent"
+        app:layout_constraintRight_toRightOf="@id/businessbrief_parent" />
+
+    <View
+        android:id="@+id/businessbrief_v1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_5"
+        android:background="@color/colorGrey"
+        android:layout_marginTop="@dimen/size_10"
+        app:layout_constraintTop_toBottomOf="@id/businessbrief_et"
+        app:layout_constraintLeft_toLeftOf="@id/businessbrief_parent"
+        app:layout_constraintRight_toRightOf="@id/businessbrief_parent"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/businessbrief_rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/size_10"
+        app:layout_constraintTop_toBottomOf="@id/businessbrief_v1"
+        app:layout_constraintBottom_toTopOf="@id/businessbrief_v2">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <TextView
+        android:id="@+id/businessbrief_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_30"
+        android:text="@string/zuiduoketianjiazhangzhaopian"
+        app:layout_constraintBottom_toBottomOf="@id/businessbrief_parent"
+        app:layout_constraintLeft_toLeftOf="@id/businessbrief_parent"
+        app:layout_constraintRight_toRightOf="@id/businessbrief_parent"
+        android:gravity="center"/>
+
+    <View
+        android:id="@+id/businessbrief_v2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1"
+        android:background="@color/colorGrey"
+        app:layout_constraintBottom_toTopOf="@id/businessbrief_tv"
+        app:layout_constraintLeft_toLeftOf="@id/businessbrief_parent"
+        app:layout_constraintRight_toRightOf="@id/businessbrief_parent"/>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@color/colorWhite">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/select_area_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_30"
+        android:background="@color/colorWhite"
+        app:tabMode="scrollable"
+        app:tabIndicatorColor="@color/colorPrimary"
+        app:tabSelectedTextColor="@color/colorPrimary"
+        app:tabTextColor="#666666">
+
+       <!-- <android.support.design.widget.TabItem
+            android:id="@+id/select_area_ti_sheng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_btn_bg"/>
+        <android.support.design.widget.TabItem
+            android:id="@+id/select_area_ti_shi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_btn_bg"/>
+        <android.support.design.widget.TabItem
+            android:id="@+id/select_area_ti_qu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_btn_bg"/>-->
+
+    </android.support.design.widget.TabLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/select_area_rv_sheng"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="@id/parent"
+        app:layout_constraintLeft_toLeftOf="@id/parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_area_tab"
+        app:layout_constraintRight_toLeftOf="@id/select_area_rv_shi"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/select_area_rv_shi"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="@id/parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_area_tab"
+        app:layout_constraintLeft_toRightOf="@id/select_area_rv_sheng"
+        app:layout_constraintRight_toLeftOf="@id/select_area_rv_qu"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/select_area_rv_qu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="@id/parent"
+        app:layout_constraintLeft_toRightOf="@id/select_area_rv_shi"
+        app:layout_constraintRight_toRightOf="@id/parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_area_tab">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</android.support.constraint.ConstraintLayout>
